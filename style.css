@@ -328,4 +328,33 @@ a:hover {
     section {
         padding: 20px;
     }
+
+     #course-details h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-block, .image-block {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-block li {
+        font-size: 16px;
+    }
+
+    .image-block img {
+        max-width: 90%;
+    }
+
+    /* Уменьшение отступов секции */
+    #course-details {
+        padding: 15px;
+    }
 }
