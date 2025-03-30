@@ -74,39 +74,50 @@ header img {
 
 
 #course-details {
-    padding: 20px;
+    text-align: center;
 }
 
-#course-details h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    text-align: center; /* Центрируем заголовок */
-}
-
-.content-wrapper {
+.course-details-wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px; /* Добавим пространство между элементами */
+    margin-top: 20px;
 }
 
-.text-block, .image-block {
+.course-details-list {
     flex: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
     text-align: left;
 }
 
-.text-block ul {
-    list-style-type: none;
+.course-details-list ul {
+    list-style: none;
     padding: 0;
+    width: 48%;
 }
 
-.text-block li {
-    font-size: 18px;
+.course-details-list li {
     margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 18px;
 }
 
-.image-block img {
+.course-details-list li::before {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.course-details-image {
+    flex: 1;
+    text-align: right;
+}
+
+.course-details-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
@@ -273,17 +284,31 @@ a:hover {
     }
 
     .course-details-wrapper {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Строим блоки по колонке */
+        align-items: center;
+        justify-content: center;
     }
 
-    .course-details-list, .course-details-image {
-        flex: none;
-        width: 100%;
+    .course-details-list {
+        max-width: 100%;
+        flex-direction: column; /* Блоки списка становятся вертикальными */
+        align-items: center;
+    }
+
+    .course-details-list ul {
+        width: 100%; /* Задаем ширину на всю доступную область */
+        margin-bottom: 20px; /* Отступы между списками */
+    }
+
+    .course-details-image {
+        max-width: 100%;
+        margin-top: 20px;
+        text-align: center; /* Центрируем изображение */
     }
 
     .course-details-image img {
-        margin-top: 20px;
+        max-width: 80%; /* Сжимаем изображение на мобильных устройствах */
+        height: auto;
     }
 
     /* Стиль для заголовков */
@@ -316,34 +341,5 @@ a:hover {
     /* Стиль для секций с картинками */
     section {
         padding: 20px;
-    }
-
-     #course-details h2 {
-        font-size: 24px;
-    }
-
-    .content-wrapper {
-        flex-direction: column; /* Меняем направление на колонку */
-        align-items: center;    /* Центрируем все элементы */
-        justify-content: center;
-    }
-
-    .text-block, .image-block {
-        flex: none;
-        width: 100%;
-        text-align: center;
-    }
-
-    .text-block li {
-        font-size: 16px;
-    }
-
-    .image-block img {
-        max-width: 90%;
-    }
-
-    /* Уменьшаем отступы секции */
-    #course-details {
-        padding: 15px;
     }
 }
