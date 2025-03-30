@@ -74,50 +74,39 @@ header img {
 
 
 #course-details {
-    text-align: center;
+    padding: 20px;
 }
 
-.course-details-wrapper {
+#course-details h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center; /* Центрируем заголовок */
+}
+
+.content-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 20px;
+    gap: 20px; /* Добавим пространство между элементами */
 }
 
-.course-details-list {
+.text-block, .image-block {
     flex: 1;
-    display: flex;
-    justify-content: space-between;
-    max-width: 50%;
     text-align: left;
 }
 
-.course-details-list ul {
-    list-style: none;
+.text-block ul {
+    list-style-type: none;
     padding: 0;
-    width: 48%;
 }
 
-.course-details-list li {
-    margin-bottom: 10px;
-    padding-left: 30px;
-    position: relative;
+.text-block li {
     font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.course-details-list li::before {
-    position: absolute;
-    left: 0;
-    font-size: 20px;
-}
-
-.course-details-image {
-    flex: 1;
-    text-align: right;
-}
-
-.course-details-image img {
+.image-block img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
