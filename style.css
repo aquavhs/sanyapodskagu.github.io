@@ -1,0 +1,331 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Картинка в header */
+header img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#benefits {
+    text-align: center; /* Центрируем заголовок */
+}
+
+
+.benefits-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Чтобы не ломалось на мобильных */
+    margin-top: 20px;
+}
+
+.benefits-list {
+    flex: 1;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+.benefits-list li {
+    margin-bottom: 10px; /* Отступы между пунктами */
+    padding-left: 25px;
+    position: relative;
+}
+
+.benefits-list li::before {
+    content: "✔";
+    color: #ffcc00;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}
+
+.benefits-image {
+    flex: 1;
+    text-align: right;
+}
+
+.benefits-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+#course-details {
+    text-align: center;
+}
+
+.course-details-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.course-details-list {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    text-align: left;
+}
+
+.course-details-list ul {
+    list-style: none;
+    padding: 0;
+    width: 48%;
+}
+
+.course-details-list li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 18px;
+}
+
+.course-details-list li::before {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.course-details-image {
+    flex: 1;
+    text-align: right;
+}
+
+.course-details-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Контейнер для отзывов */
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Отдельный отзыв */
+.review-item {
+    max-width: 300px;
+    text-align: center;
+    border-radius: 10px;
+/*    background-color: #1e1e1e;*/
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Фото ученика в круге с желтой огранкой */
+.review-img .circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #ffcc00; /* Желтая огранка */
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Имя ученика */
+.review-name {
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Контейнер для картинки отзыва */
+.review-img-container {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Картинка отзыва */
+.review-img-content {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 4px solid #ffcc00; /* Желтая огранка для картинки */
+}
+
+
+h1 {
+    color: #ffcc00;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Russo One', sans-serif;
+    max-width: 800px; /* Чтобы текст не растягивался */
+    line-height: 1.3;
+}
+
+
+h2 {
+    color: #ffcc00;
+    font-family: 'Russo One', sans-serif;
+}
+
+p.intro {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Кнопка */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ffcc00;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 18px;
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.btn:hover {
+    background-color: #ffaa00;
+}
+
+
+section {
+    width: 100%;
+    max-width: 1200px; /* Такая же ширина, как у header */
+    margin: 0 auto; /* Центрируем */
+    padding: 40px 20px; /* Добавляем отступы по бокам */
+}
+
+
+img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+}
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+        /* Контейнер для текста и картинки */
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Чтобы блоки не выходили за границы на маленьких экранах */
+    padding: 20px 0;
+}
+/* Блок с текстом */
+.text-block {
+    flex: 1;
+    text-align: left;
+}
+/* Блок с картинкой */
+.image-block {
+    flex: 1;
+    text-align: right;
+}
+/* Стиль для изображения */
+.image-block img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+ /* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+
+    header img {
+        width: 100%;
+    }
+
+    .benefits-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benefits-list, .benefits-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .benefits-image img {
+        margin-top: 20px;
+    }
+
+    .course-details-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .course-details-list, .course-details-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .course-details-image img {
+        margin-top: 20px;
+    }
+
+    /* Стиль для заголовков */
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    /* Изменение выравнивания контента */
+    .content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-block, .image-block {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+    /* Уменьшение размера кнопки */
+    .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    /* Изображения сжимаются */
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    /* Стиль для секций с картинками */
+    section {
+        padding: 20px;
+    }
+}
