@@ -331,12 +331,12 @@ a:hover {
 
      #course-details h2 {
         font-size: 24px;
-        text-align: center;
     }
 
     .content-wrapper {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Меняем направление на колонку */
+        align-items: center;    /* Центрируем все элементы */
+        justify-content: center;
     }
 
     .text-block, .image-block {
@@ -353,7 +353,7 @@ a:hover {
         max-width: 90%;
     }
 
-    /* Уменьшение отступов секции */
+    /* Уменьшаем отступы секции */
     #course-details {
         padding: 15px;
     }
